@@ -1,0 +1,204 @@
+                                           "ANSWER:2"
+
+void main (){     
+
+  
+  table(5);
+}
+  
+  
+  
+ void table(int a){
+   for(var i=1;i<=10;i++){
+   var  k=i*5;
+     print("5*${i}=${k}");
+   }
+ }
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+                                           "ANSWER:3"
+
+
+void main (){
+  array(8);
+  
+}
+  
+  
+ 
+ void array (int n){
+   var list=[9,2,6,8,5];
+   for(var i=0;i<4;i++){
+     var k= n/list[i];
+     print(k);
+   }
+ }
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+                                        "ANSWER:4"
+
+void main (){
+  var names=["ali","samar","sohaib","anas","maaz"];
+  var marks=[85,75,60,70,90];
+  for (var i=0; i<marks.length;i++){
+    grade(names[i], marks[i]);
+    
+  } 
+}
+  
+  
+ 
+ void grade(names,marks){
+   if( marks>=90 || marks>80){
+     print("${names} acheieve ${marks} marks his grade is A+");
+   } else if(marks<=75 || marks>70){
+     print("${names} acheieve ${marks} marks his grade is B");
+   } else if(marks<=65 || marks>60){
+     print("${names} acheive ${marks} marks his grade is c");
+   }  
+   
+   
+   
+   
+   
+   
+   
+   }
+
+   
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+                                            "ANSWER:5"
+
+void main (){
+  var data=mydata();
+  data.information();
+  
+}
+  
+ 
+
+
+class mydata{
+ void information(){
+   String name="Aliakber rizvi";
+   int age=19;
+  var courses=["Statistics","calculus","ICS"];
+   print("name=${name}");
+   print("age=${age}");
+   print("course=${courses}");
+ }
+}  
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                                       "ANSWER:6"
+
+void main (){
+  var myname=myNAME();
+  myname.name();
+  
+}
+  
+ 
+
+
+
+
+
+class myNAME{
+ void name(){
+   String name=" aliakber rizvi";
+   print("${name}");
+   
+ }
+} 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                                      "ANSWER:7"
+
+void main (){
+  
+ var biodata=data("aliakber",19,"BSCS");
+  print("${biodata.name},${biodata.age},${biodata.degree}");
+  
+}
+  
+ 
+
+
+
+
+
+class data{
+  
+late String name;
+late int age;
+late String degree;
+  
+data(var name,int age,var degree){
+  
+  
+ this.name=name;
+ this.age=age;
+  this.degree=degree;
+}  
+ 
+}  
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""''
+                               
+                                      "ANSWER:8"
+
+void main()                ### ANS : 8 ###                 
+{
+
+  var human=Humans();
+  human.legs=(2);
+  human.same_item="Drinks Water";
+  human.speak();
+
+  var dog=Dog();
+  dog.same_item="Drinks Water";
+  dog.legs=(4);
+  dog.bark();
+} 
+
+
+class LivingCreatures{
+
+  late String same_item;
+
+void eat(){
+
+    print("eats food to live alive");
+  }
+}
+
+class Humans extends LivingCreatures {
+
+  late int legs;
+
+
+  void speak(){
+    print("Human speaks");
+  }
+
+}
+
+class Dog extends LivingCreatures{
+  late int legs;
+
+
+  void bark(){
+    print("Dogs Bark");
+  }
+}   
+
+                                      
